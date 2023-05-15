@@ -75,6 +75,7 @@ nav ul li {
     height: 480px;
     display: inline-block;
     background-position: center;
+    object-fit: cover;
 }
 
 .container-opciones-pagprincipal {
@@ -86,20 +87,71 @@ nav ul li {
 }
 
 .opciones-pagprincipal {
-    display: flex;
-    width: 100%;
-    border: 2px solid black;
-    box-shadow: 3px 3px 5px gray;
-    padding: 2px;
-    margin: 25px 50px 25px 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,80% 20%);
+    grid-template-areas:
+    "im1 im2 im3 im4"
+    "tim1 tim2 tim3 tim4"
+    ;
+    justify-content: center;
+    gap: 10px;
 
 }
 
 .opciones-pagprincipal img {
     object-fit: cover;
-    width: 264px;
-    height: 264px;
-    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.im1 {
+    grid-area: im1;
+}
+
+.im2 {
+    grid-area: im2;
+}
+
+.im3 {
+    grid-area: im3;
+}
+
+.im4 {
+    grid-area: im4;
+}
+
+.tim1 {
+    grid-area: tim1;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+
+.tim2 {
+    grid-area: tim2;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim3 {
+    grid-area: tim3;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim4 {
+    grid-area: tim4;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
@@ -268,7 +320,7 @@ footer {
     height: 300px;
 }
 
-/**PUNTOS DE QUIEBRE*/
+/**PUNTOS DE QUIEBRE - PAGINA PRINCIPAL*/
 
 @media (max-width:720px) {
 
