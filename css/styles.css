@@ -82,15 +82,16 @@ nav ul li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px 50px;
 }
 
 .opciones-pagprincipal {
     display: flex;
-    overflow: hidden;
-    width: 82%;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 3px 3px 5px gray;
     padding: 2px;
+    margin: 25px 50px 25px 50px;
 
 }
 
@@ -98,7 +99,7 @@ nav ul li {
     object-fit: cover;
     width: 264px;
     height: 264px;
-    margin: 5px;
+    margin: 10px;
 }
 
 h1 {
