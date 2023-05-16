@@ -346,8 +346,8 @@ footer {
     }
 
     .logo {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .logopie {
@@ -363,6 +363,22 @@ footer {
         display: block;
     }
 
+    a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 0px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 0px;
+        margin: 60px 0px 20px 0px;
+    }
+
     .opciones-pagprincipal {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 80% 20%);
@@ -374,6 +390,22 @@ footer {
         ;
         height: 264px;
         margin: 5px 5px 250px 5px;
+    }
+
+    .tim1 {
+        font-size: 16px;
+    }
+
+    .tim2 {
+        font-size: 16px;
+    }
+
+    .tim3 {
+        font-size: 16px;
+    }
+
+    .tim4 {
+        font-size: 16px;
     }
 
 }
