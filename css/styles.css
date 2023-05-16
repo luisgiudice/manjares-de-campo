@@ -381,7 +381,7 @@ footer {
 
     .opciones-pagprincipal {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 80% 20%);
+        grid-template-rows: repeat(4, 65% 10%);
         grid-template-areas:
             "im1 im2"
             "tim1 tim2"
@@ -393,7 +393,7 @@ footer {
     }
 
     .tim1 {
-        font-size: 16px;
+        font-size: 16px;        
     }
 
     .tim2 {
@@ -415,6 +415,18 @@ footer {
 
 }
 
+@media (max-width:380px) {
+
+.opciones-pagprincipal img {
+    width: 120px;
+    height: 120px;
+}
+
+.opciones-pagprincipal {
+    grid-template-rows: repeat(4, 45% 10%);
+}
+
+}
 @media (max-width:280px) {
 
     h1 {
@@ -433,5 +445,7 @@ footer {
         width: 10px;
         height: 10px;
     }
+
+
 
 }
