@@ -52,7 +52,6 @@ a {
 .logo {
     width: 150px;
     height: 150px;
-    /**display: inline-block;*/
     padding: 20px 20px 20px 20px;
 }
 
@@ -344,6 +343,16 @@ footer {
     header {
         position: static;
         top: 0;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logopie {
+        width: 100px;
+        height: 100px;
     }
 
     nav {
