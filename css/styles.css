@@ -178,8 +178,8 @@ h2 {
 }
 
 h3 {
-    padding: 40px;
-    margin: 20px;
+    padding: 30px;
+    margin: 15px;
     text-align: center;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
@@ -327,28 +327,7 @@ footer {
 
 /**EVENTOS*/
 
-.container-eventos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
-.eventos {
-    display: flex;
-    overflow: hidden;
-    width: 75%;
-    border: 2px solid black;
-    box-shadow: 3px 3px 5px gray;
-    margin: 20px;
-}
-
-.eventos img {
-    object-fit: cover;
-    width: 264px;
-    height: 264px;
-    margin: 10px;
-}
 
 /**EXPERIENCIAS*/
 
@@ -647,71 +626,4 @@ footer {
 
 /**PUNTOS DE QUIEBRE - PAGINA PICADAS*/
 
-@media (max-width:1200px) {
-
-    .picada img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width:1000px) {
-
-    .picada img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-@media (max-width:850px) {
-
-    .picada img {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media (max-width:700px) {
-
-    .picada img {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-@media (max-width:480px) {
-
-    h3 {
-        font-size: 18px;
-        padding: 0px;
-        margin: 40px 0px 40px 0px;
-    }
-
-    .picada {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .picada img {
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@media (max-width:380px) {
-
-    .picada img {
-        width: 150px;
-        height: 150px;
-        margin: 5px 5px 50px 5px;
-    }
-}
-
-@media (max-width:280px) {
-
-    h3 {
-        font-size: 16px;
-        padding: 0px;
-        margin: 20px 0px 20px 0px;
-    }
-}
+/** con bootstrap*/
