@@ -301,29 +301,29 @@ footer {
 
 /**PICADAS*/
 
-.container-picadas {
+.container-picada {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px 50px;
 }
 
 .picada {
     display: flex;
-    overflow: hidden;
-    width: 82%;
-    border: 2px solid black;
-    box-shadow: 3px 3px 5px gray;
-    padding: 2px;
+    width: 80%;
+    gap: 2px;
     justify-content: space-evenly;
 }
 
 .picada img {
     object-fit: cover;
-    width: 264px;
-    height: 264px;
-    margin: 5px;
+    box-shadow: 3px 3px 5px gray;
+    width: 360px;
+    height: 360px;
+    margin: 10px;
 }
+
 
 /**EVENTOS*/
 
@@ -451,7 +451,7 @@ footer {
     }
 
     .tim1 {
-        font-size: 16px;        
+        font-size: 16px;
     }
 
     .tim2 {
@@ -475,18 +475,19 @@ footer {
 
 @media (max-width:380px) {
 
-.opciones-pagprincipal img {
-    width: 120px;
-    height: 120px;
-    margin: 5px 5px 50px 5px;
+    .opciones-pagprincipal img {
+        width: 120px;
+        height: 120px;
+        margin: 5px 5px 50px 5px;
+    }
+
+    .opciones-pagprincipal {
+        grid-template-rows: repeat(4, 45% 10%);
+        margin: 5px 5px 70px 5px;
+    }
+
 }
 
-.opciones-pagprincipal {
-    grid-template-rows: repeat(4, 45% 10%);
-    margin: 5px 5px 70px 5px;
-}
-
-}
 @media (max-width:280px) {
 
     h1 {
@@ -509,7 +510,91 @@ footer {
 
 /**PUNTOS DE QUIEBRE - PAGINA PRODUCTOS*/
 
-@media (max-width:480px) {
+@media (max-width:800px) {
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 60% 20%);
+    }
+
+    .opciones-productos img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .tim1p {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .tim2p {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .tim3p {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .tim4p {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:700px) {
+
+    .opciones-productos img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 60% 20%);
+    }
+}
+
+@media (max-width:650px) {
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 50% 20%);
+    }
+
+    .opciones-productos img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tim1p {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .tim2p {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .tim3p {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .tim4p {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:500px) {
 
     .opciones-productos {
         grid-template-columns: repeat(2, 1fr);
@@ -520,12 +605,12 @@ footer {
             "im3p im4p"
             "tim3p tim4p"
         ;
-        height: 264px;
+        height: 250px;
         margin: 5px 5px 180px 5px;
     }
 
     .tim1p {
-        font-size: 16px;        
+        font-size: 16px;
     }
 
     .tim2p {
@@ -544,20 +629,89 @@ footer {
         width: 170px;
         height: 170px;
     }
-
 }
 
 @media (max-width:380px) {
 
-.opciones-productos img {
-    width: 120px;
-    height: 120px;
-    margin: 5px 5px 50px 5px;
+    .opciones-productos img {
+        width: 120px;
+        height: 120px;
+        margin: 5px 5px 50px 5px;
+    }
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 45% 10%);
+        margin: 5px 5px 70px 5px;
+    }
 }
 
-.opciones-productos {
-    grid-template-rows: repeat(4, 45% 10%);
-    margin: 5px 5px 70px 5px;
+/**PUNTOS DE QUIEBRE - PAGINA PICADAS*/
+
+@media (max-width:1200px) {
+
+    .picada img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
+@media (max-width:1000px) {
+
+    .picada img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width:850px) {
+
+    .picada img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:700px) {
+
+    .picada img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width:480px) {
+
+    h3 {
+        font-size: 18px;
+        padding: 0px;
+        margin: 40px 0px 40px 0px;
+    }
+
+    .picada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picada img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width:380px) {
+
+    .picada img {
+        width: 120px;
+        height: 120px;
+        margin: 5px 5px 50px 5px;
+    }
+}
+
+@media (max-width:280px) {
+
+    h3 {
+        font-size: 16px;
+        padding: 0px;
+        margin: 20px 0px 20px 0px;
+    }
 }
