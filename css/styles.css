@@ -416,6 +416,12 @@ footer {
         margin: 60px 0px 20px 0px;
     }
 
+    h3 {
+        font-size: 18px;
+        padding: 0px;
+        margin: 60px 0px 20px 0px;
+    }
+
     .opciones-pagprincipal {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 65% 10%);
@@ -626,4 +632,42 @@ footer {
 
 /**PUNTOS DE QUIEBRE - PAGINA PICADAS*/
 
+@media (max-width:1140px) {
+
+    .picada img {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (max-width:850px) {
+
+    .picada img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:650px) {
+
+    .picada img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .picada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picada img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/**PUNTOS DE QUIEBRE - PAGINA EVENTO*
 /** con bootstrap*/
