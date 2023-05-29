@@ -242,7 +242,6 @@ footer {
     ;
     justify-content: center;
     gap: 15px;
-
 }
 
 .opciones-productos img {
@@ -362,13 +361,11 @@ footer {
 
     .manjares {
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
     }
 
     nav {
         height: 50px;
-        text-align: center;
         margin: 0;
         padding: 0;
     }
@@ -379,7 +376,6 @@ footer {
 
     header {
         position: static;
-        top: 0;
     }
 
     .logo {
@@ -509,26 +505,18 @@ footer {
 
     .tim1p {
         font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 
     .tim2p {
         font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 
     .tim3p {
         font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 
     .tim4p {
         font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 }
 
@@ -557,26 +545,18 @@ footer {
 
     .tim1p {
         font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 
     .tim2p {
         font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 
     .tim3p {
         font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 
     .tim4p {
         font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
     }
 }
 
