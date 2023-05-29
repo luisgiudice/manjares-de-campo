@@ -106,6 +106,10 @@ nav ul li {
     box-shadow: 3px 3px 10px gray;
 }
 
+.opciones-pagprincipal img:hover {
+    box-shadow: 5px 5px 40px gray;
+}
+
 .im1 {
     grid-area: im1;
 }
