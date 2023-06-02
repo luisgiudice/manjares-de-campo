@@ -1,0 +1,16 @@
+/**primero las variables y mixins*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+@import "./base/reset";
+@import "./utilities/funciones";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/main-productos";
+@import "./layout/main-picadas";
+@import "./layout/main-eventos";
+@import "./layout/main-experiencias";
+
+

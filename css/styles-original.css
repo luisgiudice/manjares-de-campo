@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+/**font-family: 'Roboto', sans-serif;*/
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    /**position: sticky;*/
+    top: 0;
+    
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1C58A4;
+    /**#e94a16 /**33a52f*/
+   height: 40px;
+}
+.imagen-redes img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.manjares {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-color: #284679;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    padding: 20px 20px 20px 20px;
+}
+
+nav {
+    height: 80px;
+    text-align: center;
+    margin-left: 120px;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/**MAIN PAGINA PRINCIPAL*/
+
+.imagen-pag {
+    width: 100%;
+    height: 25%;
+    display: inline-block;
+    background-position: center;
+    object-fit: cover;
+}
+
+.container-opciones-pagprincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.opciones-pagprincipal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 80% 20%);
+    grid-template-areas:
+        "im1 im2 im3 im4"
+        "tim1 tim2 tim3 tim4"
+    ;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.opciones-pagprincipal img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.opciones-pagprincipal img:hover {
+    box-shadow: 5px 5px 40px gray;
+}
+
+.im1 {
+    grid-area: im1;
+}
+
+.im2 {
+    grid-area: im2;
+}
+
+.im3 {
+    grid-area: im3;
+}
+
+.im4 {
+    grid-area: im4;
+}
+
+.tim1 {
+    grid-area: tim1;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim2 {
+    grid-area: tim2;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim3 {
+    grid-area: tim3;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim4 {
+    grid-area: tim4;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #284679;
+    text-shadow: 1px 1px 3px rgb(168, 164, 164);
+}
+
+h2 {
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #284679;
+    text-shadow: 1px 1px 3px rgb(168, 164, 164);
+}
+
+h3 {
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #284679;
+}
+
+h4 {
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #000000;
+}
+
+h5 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 1px 1px 3px gray;
+}
+
+.logopie {
+    display: inline;
+    width: 175px;
+    height: 175px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 100px;
+}
+
+footer {
+    background-color: rgb(40, 70, 121, 1);
+    text-align: center;
+    height: 300px;
+}
+
+/**PRODUCTOS*/
+
+
+.container-opciones-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.opciones-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 80% 20%);
+    grid-template-areas:
+        "im1p im2p im3p im4p"
+        "tim1p tim2p tim3p tim4p"
+    ;
+    justify-content: center;
+    gap: 15px;
+}
+
+.opciones-productos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.im1p {
+    grid-area: im1p;
+}
+
+.im2p {
+    grid-area: im2p;
+}
+
+.im3p {
+    grid-area: im3p;
+}
+
+.im4p {
+    grid-area: im4p;
+}
+
+.tim1p {
+    grid-area: tim1p;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim2p {
+    grid-area: tim2p;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim3p {
+    grid-area: tim3p;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.tim4p {
+    grid-area: tim4p;
+    justify-self: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/**PICADAS*/
+
+.container-picada {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.picada {
+    display: flex;
+    width: 80%;
+    gap: 2px;
+    justify-content: space-evenly;
+}
+
+.picada img {
+    object-fit: cover;
+    box-shadow: 3px 3px 5px gray;
+    width: 360px;
+    height: 360px;
+    margin: 10px;
+}
+
+
+/**EVENTOS*/
+
+
+
+/**EXPERIENCIAS*/
+
+.container-experiencias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.experiencias {
+    display: flex;
+    overflow: hidden;
+    border: 2px solid black;
+    box-shadow: 3px 3px 5px gray;
+    margin: 20px;
+    width: 80%;
+    padding: 40px;
+}
+
+.experiencias img {
+    margin: 5px;
+    object-fit: cover;
+    width: 90%;
+    height: 300px;
+}
+
+/**PUNTOS DE QUIEBRE - PAGINA PRINCIPAL*/
+
+@media (max-width:720px) {
+
+    .manjares {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    header {
+        position: static;
+    }
+
+    .logo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .logopie {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav {
+        height: 110px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 4px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 0px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 0px;
+        margin: 60px 0px 20px 0px;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding: 0px;
+        margin: 60px 0px 20px 0px;
+    }
+
+    .opciones-pagprincipal {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 65% 10%);
+        grid-template-areas:
+            "im1 im2"
+            "tim1 tim2"
+            "im3 im4"
+            "tim3 tim4"
+        ;
+        height: 264px;
+        margin: 5px 5px 180px 5px;
+    }
+
+    .tim1 {
+        font-size: 16px;
+    }
+
+    .tim2 {
+        font-size: 16px;
+    }
+
+    .tim3 {
+        font-size: 16px;
+    }
+
+    .tim4 {
+        font-size: 16px;
+    }
+
+    .opciones-pagprincipal img {
+        width: 170px;
+        height: 170px;
+    }
+
+}
+
+@media (max-width:380px) {
+
+    .opciones-pagprincipal img {
+        width: 120px;
+        height: 120px;
+        margin: 5px 5px 50px 5px;
+    }
+
+    .opciones-pagprincipal {
+        grid-template-rows: repeat(4, 45% 10%);
+        margin: 5px 5px 70px 5px;
+    }
+
+}
+
+@media (max-width:280px) {
+
+    h1 {
+        font-size: 20px;
+        padding: 0px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    h2 {
+        font-size: 18px;
+        padding: 0px;
+        margin: 40px 0px 40px 0px;
+    }
+
+    .imagen-redes img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/**PUNTOS DE QUIEBRE - PAGINA PRODUCTOS*/
+
+@media (max-width:800px) {
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 60% 20%);
+    }
+
+    .opciones-productos img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .tim1p {
+        font-size: 18px;
+    }
+
+    .tim2p {
+        font-size: 18px;
+    }
+
+    .tim3p {
+        font-size: 18px;
+    }
+
+    .tim4p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:700px) {
+
+    .opciones-productos img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 60% 20%);
+    }
+}
+
+@media (max-width:650px) {
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 50% 20%);
+    }
+
+    .opciones-productos img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tim1p {
+        font-size: 14px;
+    }
+
+    .tim2p {
+        font-size: 14px;
+    }
+
+    .tim3p {
+        font-size: 14px;
+    }
+
+    .tim4p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .opciones-productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 65% 10%);
+        grid-template-areas:
+            "im1p im2p"
+            "tim1p tim2p"
+            "im3p im4p"
+            "tim3p tim4p"
+        ;
+        height: 250px;
+        margin: 5px 5px 180px 5px;
+    }
+
+    .tim1p {
+        font-size: 16px;
+    }
+
+    .tim2p {
+        font-size: 16px;
+    }
+
+    .tim3p {
+        font-size: 16px;
+    }
+
+    .tim4p {
+        font-size: 16px;
+    }
+
+    .opciones-productos img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width:380px) {
+
+    .opciones-productos img {
+        width: 120px;
+        height: 120px;
+        margin: 5px 5px 50px 5px;
+    }
+
+    .opciones-productos {
+        grid-template-rows: repeat(4, 45% 10%);
+        margin: 5px 5px 70px 5px;
+    }
+}
+
+/**PUNTOS DE QUIEBRE - PAGINA PICADAS*/
+
+@media (max-width:1140px) {
+
+    .picada img {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (max-width:850px) {
+
+    .picada img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:650px) {
+
+    .picada img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .picada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picada img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/**PUNTOS DE QUIEBRE - PAGINA EVENTO*
+/** con bootstrap*/

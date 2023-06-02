@@ -1,0 +1,22 @@
+.container-picada {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.picada {
+    display: flex;
+    width: 80%;
+    gap: 2px;
+    justify-content: space-evenly;
+}
+
+.picada img {
+    object-fit: cover;
+    box-shadow: 3px 3px 5px gray;
+    width: 360px;
+    height: 360px;
+    margin: 10px;
+}
