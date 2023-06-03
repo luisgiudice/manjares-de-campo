@@ -47,3 +47,46 @@ nav ul li {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+
+/**PUNTOS DE QUIEBRE*/
+
+@media (max-width:720px) {
+
+    .manjares {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    header {
+        position: static;
+    }
+
+    .logo {
+        width: 140px;
+        height: 140px;
+    }
+
+    nav {
+        height: 110px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 4px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
