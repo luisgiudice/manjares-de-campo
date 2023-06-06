@@ -1,62 +1,54 @@
 .container-picada {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px 50px;
-}
-
-.picada {
-    display: flex;
-    width: 80%;
-    gap: 2px;
-    justify-content: space-evenly;
-}
-
-.picada img {
-    object-fit: cover;
-    box-shadow: 3px 3px 5px gray;
-    width: 360px;
-    height: 360px;
-    margin: 10px;
-}
-
-
-/**PUNTOS DE QUIEBRE*/
-
-@media (max-width:1140px) {
-
-    .picada img {
-        width: 260px;
-        height: 260px;
-    }
-}
-
-@media (max-width:850px) {
-
-    .picada img {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media (max-width:650px) {
-
-    .picada img {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-@media (max-width:500px) {
-
+  
     .picada {
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      width: 80%;
+      gap: 2px;
+      justify-content: space-evenly;
+  
+      img {
+        object-fit: cover;
+        box-shadow: 3px 3px 5px gray;
+        width: 360px;
+        height: 360px;
+        margin: 10px;
+      }
     }
-
+  }
+  
+  @media (max-width: 1140px) {
     .picada img {
-        width: 200px;
-        height: 200px;
+      width: 260px;
+      height: 260px;
     }
-}
+  }
+  
+  @media (max-width: 850px) {
+    .picada img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .picada img {
+      width: 160px;
+      height: 160px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .picada {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .picada img {
+      width: 200px;
+      height: 200px;
+    }
+  }

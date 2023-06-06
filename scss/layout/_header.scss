@@ -1,92 +1,95 @@
+@import "./utilities/variables";
 .redes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    background-color: #1C58A4;
-    /**#e94a16 /**33a52f*/
+    background-color: $color-secundario;
     height: 40px;
-}
-.imagen-redes img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-.manjares {
+  
+    .imagen-redes img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+  .manjares {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
-    background-color: #284679;
-}
-
-a {
+    background-color: $color-primario;
+  }
+  
+  nav {
+    height: 80px;
+    text-align: center;
+    margin-left: 120px;
+  
+    ul li {
+      display: inline;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 150px;
     height: 150px;
     padding: 20px 20px 20px 20px;
-}
-
-nav {
-    height: 80px;
-    text-align: center;
-    margin-left: 120px;
-}
-
-nav ul li {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+  }
 
 
 /**PUNTOS DE QUIEBRE*/
 
-@media (max-width:720px) {
-
+@media (max-width: 720px) {
     .manjares {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     nav {
-        height: 50px;
-        margin: 0;
-        padding: 0;
+      height: 50px;
+      margin: 0;
+      padding: 0;
+  
+      ul li {
+        display: inline;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
-
-}
-
-@media (max-width:480px) {
-
+  }
+  
+  @media (max-width: 480px) {
     header {
-        position: static;
+      position: static;
     }
-
+  
     .logo {
-        width: 140px;
-        height: 140px;
+      width: 140px;
+      height: 140px;
     }
-
+  
     nav {
-        height: 110px;
-    }
-
-    nav ul li {
+      height: 110px;
+  
+      ul li {
         display: block;
         margin: 4px;
+      }
     }
-
+  
     a {
-        font-size: 16px;
+      font-size: 16px;
     }
-}
+  }
