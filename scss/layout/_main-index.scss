@@ -8,10 +8,7 @@
 }
 
 .container-opciones-pagprincipal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex(row,wrap,center,center); 
     padding: 10px 50px;
 }
 

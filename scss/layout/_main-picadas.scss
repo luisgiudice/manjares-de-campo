@@ -1,8 +1,6 @@
 .container-picada {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 50px;
+  @include flex(row,wrap,center,center); 
+  padding: 10px 50px;
   
     .picada {
       display: flex;

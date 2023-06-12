@@ -97,6 +97,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 10px 50px; }
 
 .opciones-pagprincipal {
@@ -276,6 +277,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 10px 50px; }
 
 .opciones-productos {
@@ -400,8 +402,10 @@ footer {
 
 .container-picada {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 10px 50px; }
   .container-picada .picada {
     display: flex;
