@@ -8,12 +8,14 @@
     background-color: $color-secundario;
     height: 40px;
   
-    .imagen-redes img {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-    }
   }
+
+  .imagen-redes img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
   .manjares {
     display: flex;
     flex-direction: row;
@@ -40,12 +42,14 @@
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    align-content: center;
   }
   
   .logo {
     width: 150px;
     height: 150px;
     padding: 20px 20px 20px 20px;
+    display:block;
   }
 
 
@@ -75,6 +79,10 @@
       position: static;
     }
   
+.mio {
+  line-height: 2;
+}
+
     .logo {
       width: 140px;
       height: 140px;
@@ -85,11 +93,12 @@
   
       ul li {
         display: block;
-        margin: 4px;
+        margin: 0px;
       }
     }
   
     a {
       font-size: 16px;
+      line-height: 1.6;
     }
   }
